@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> CSE110 Management - Team bonding, Github repo, Branding, Group Page and Video Notes</title>
     <link rel="icon" href="favicon.ico" type="image/png">
-
   </head>
 
 
 
   <body>
-
-    <header> CSE110 Lab 2 Sample</header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="part2.txt">Part2</a></li>
-        <li><a href="favicon.ico">Favicon</a></li>
-      </ul>
-    </nav>
-    <p><strong>Warning:</strong> Top secret meeting notes, do<em> NOT</em> share!</p>
+    <section>
+      <header> CSE110 Lab 2 Sample</header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="part2.txt">Part2</a></li>
+           <li><a href="favicon.ico">Favicon</a></li>
+          </ul>
+        </nav>
+      <p><strong>Warning:</strong> Top secret meeting notes, do<em> NOT</em> share!</p>
+    </section>
 
     <main>
       <section>
      <!-- Tittle,Meeting type, Date element-->
-      <h1><i>CSE110</i></h1>
-      
-      <span>Management & </span>
-      <span>Meeting Notes</span>
-      <h4>Meeting Type: Check-Ins</h4>
-      <h4>Date: April 12, 2025</h4>
+        <h1><i>CSE110</i></h1>
+        <span>Management & </span>
+        <span>Meeting Notes</span>
+        <h4>Meeting Type: Check-Ins</h4>
+        <h4>Date: April 12, 2025</h4>
       </section>
       <hr>
       <!-- Main Meeting Notes-->
-      <section>
+
+
+    <section>
      <!-- Attendee List element-->
-    <div class="Attendance-List">
+      <div class="Attendance-List">
         <h3> Attendance List: </h3>
         <ul>
             <li>Vincent</li>
@@ -50,10 +52,10 @@
             <li></li>
             <li></li>
             <li></li>
-        </ul>
-    </div>
-    
+         </ul>
+      </div>
     <hr>
+
     <!-- Agenda element-->
     <h2> Agenda </h2>
        <h3>1. Team Bonding Activity (15–20 min)</h3>
@@ -87,17 +89,18 @@
      
         <hr>
         <!--things that were unfinished business from last meeting-->
-       <h2> Others: </h2>
-            Things that were <b>unfinished</b> business from last meeting... <br>
-            Things that are <b>new</b> business that need to be talked about... <br>
-            Any <b>miscellaneous</b> comments / questions / concerns that anyone would like to bring up... <br>
-            <b>Picrures</b> of any diagrams / architecture / things that were presented... <br>
+        <h2> Others: </h2>
+        <ol>
+            <li>Things that were <b>unfinished</b> business from last meeting... </li>
+            <li>Things that are <b>new</b> business that need to be talked about... </li>
+            <li>Any <b>miscellaneous</b> comments / questions / concerns that anyone would like to bring up... </li>
+            <li><b>Pictures</b> of any diagrams / architecture / things that were presented... </li>
+        </ol>
         <hr>
 
         <!--Video-->
-        
         <h2>Video </h2>
-        <video width="500" height="300" controls>
+          <video width="500" height="300" controls>
             <source src="video_file.mp4" type="video/mp4">
           </video>
 
@@ -106,10 +109,12 @@
           <audio controls>
             <source src="video_file.mp4" type="audio/mp4">
           </audio>
-    
+          
         </section>
     </main>
 
+
+     
     <!--Forms-->
       <h3>Survey: Name, Date & Comments</h3>
       <section>
@@ -126,28 +131,26 @@
         <label for="date">Date:</label>
         <input type="date" id="date" name="date"><br><br>
 
-    <!-- Radio input -->
-
-        <p>Favorite Team Name</p>
-
-        <input type="radio" id="9_of_spades" name="team_name" value="9_of_spades">
+      <!-- Radio input -->
+        <label for="team_name">Favorite team name:</label>
         <label for="9_of_spades">9 of Spades</label>
+        <input type="radio" id="9_of_spades" name="team_name" value="9_of_spades">
 
-        <input type="radio" id="niners" name="team_name" value="niners">
         <label for="niners">Niners</label>
+        <input type="radio" id="niners" name="team_name" value="niners">
 
-        <input type="radio" id="cloud_9" name="team_name" value="cloud_9">
-        <label for="cloud_9">Cloud 9</label> <br><br>
+        <label for="cloud_9">Cloud 9</label> 
+        <input type="radio" id="cloud_9" name="team_name" value="cloud_9"><br><br>
 
       <!-- Checkbox input -->
-      <p>    Favorite Programming Language(s)</p>
-      <input type="checkbox" id="python" name="programming languages" value="python">
+      <label for="programming_languages">Favorite Programming Language(s):</label>
+      <input type="checkbox" id="python" name="programming_languages" value="python">
       <label for="python">Python</label>
 
-      <input type="checkbox" id="c++" name="programming languages" value="c++">
+      <input type="checkbox" id="c++" name="programming_languages" value="c++">
       <label for="c++">C++</label>
 
-      <input type="checkbox" id="java" name="programming languages" value="java">
+      <input type="checkbox" id="java" name="programming_languages" value="java">
       <label for="java">Java</label><br><br>
 
 
@@ -173,7 +176,7 @@
       </select><br><br>
 
     <!-- button -->
-    <input type="submit" value="Submit">
+    <button>Submit!</button>
       </fieldset>
      </form>
     </section>
