@@ -58,14 +58,18 @@
     <h2> Agenda </h2>
        <h3>1. Team Bonding Activity (15–20 min)</h3>
         <ul>
-         <li>Choose a fun group activity</li>
-         <li>Focus on getting to know each other’s strengths and work styles</li>
+          <li>Focus on getting to know each other’s strengths and work styles</li>
+         <details>
+          <summary>Choose a <i>fun</i> group activity!</summary>
+          <p>Scribbio.io, Leetcode, Quizbreaker, Among Us <br> Ping Pong, Codenames, Hide & Seek</p>
+        </details>
+         
         </ul>
      
        <h3>2. Define Our Team Identity & Brand (10–15 min)</h3>
         <ul>
          <li>Come up with a team name, logo, and theme</li>
-         <img src="9_of_spades.jpg" alt="Team Logo">
+         <img src="9_of_spades_jpg.png" alt="Team Logo" width="200">
         </ul>
      
        <h3>3. Build Our Team Webpage (15–20 min)</h3>
@@ -104,11 +108,76 @@
           <audio controls>
             <source src="" type="audio/ogg">
             <source src="" type="audio/mpeg">
-          Your browser does not support the audio element.
           </audio>
     
         </section>
     </main>
+
+    <!--Forms-->
+      <section>
+        <form action="/submit" method="post">
+    <!-- Grouping with Fieldset -->
+        <fieldset>
+        <legend>Survey: Name, Date & Comments</legend>
+
+      <!-- Text input -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+      <!-- Date input -->
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date"><br><br>
+
+    <!-- Radio input -->
+
+        <legend>Favorite Team Name</legend>
+
+        <input type="radio" id="9 of spades" name="team_name" value="9 of spades">
+        <label for="9 of spades">9 of Spades</label>
+
+        <input type="radio" id="niners" name="team_name" value="niners">
+        <label for="niners">Niners</label>
+
+        <input type="radio" id="cloud 9" name="team_name" value="cloud 9">
+        <label for="cloud 9">Cloud 9</label> <br><br>
+
+      <!-- Checkbox input -->
+      <legend>Favorite Porgramming Language(s)</legend>
+      <input type="checkbox" id="python" name="programming languages" value="python">
+      <label for="python">Python</label>
+
+      <input type="checkbox" id="c++" name="programming languages" value="c++">
+      <label for="c++">C++</label>
+
+      <input type="checkbox" id="Java" name="programming languages" value="Java">
+      <label for="java">Java</label><br><br>
+
+
+      <!-- textarea -->
+      <label for="comment">Comments & Concerns:</label><br>
+      <textarea id="comment" name="comment" rows="5" cols="40"></textarea><br><br>
+
+      <!-- datalist , option -->
+      <label for="activity">Favorite Group Activity:</label>
+      <input list="activities" id="activity" name="activity">
+      <datalist id="activities">
+        <option value="Among us">
+        <option value="Scribbio">
+        <option value="Ping Pong">
+        <option value="Quizbreaker">
+      </datalist><br><br>
+
+          <!-- select -->
+      <label for="consent">Do we have you consent to share this survey?:</label>
+      <select id="consent" name="consent">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select><br><br>
+
+    <!-- button -->
+    <input type="submit" value="Submit">
+    </fieldset>
+      </section>
 
 
 
@@ -117,6 +186,7 @@
 
 
     </footer>
+
   </body>
 
 
