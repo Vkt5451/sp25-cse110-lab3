@@ -9,7 +9,7 @@ Date = [MM/DD/YYYY] & Time = []
 ## Meeting Type
 Daily or Weekly Check-in Meeting.. 
 
-## Attendees List
+## Team Member Attendance List
 +
 +
 +
@@ -24,7 +24,7 @@ Daily or Weekly Check-in Meeting..
 ## Progress
 
 
-| 👤 Team Member | ✅ Yesterday | 🚧 Today | 🛑 Blockers |
+|  Team Member | Previous goals met last time we met |  New goals for today and onward |  Blockers |
 |---------------|--------------|----------|-------------|
 | Name          | What was finished? | New goals/actions for today  | Anything blocking progress?  |  
 |               |              |          |             |
