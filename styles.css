@@ -6,97 +6,110 @@ body {
     padding: 0;
 }
 
-
-h2,h3,p{
-    text-align: center;
-}
-
-.hero {
-    background-color: #48b772;  /* light blue background */
-    padding: 40px 20px;        /* space inside the block */
+.layout {
+    display: flex;
 }
 
 .top-header {
+    background-color: #a7d2f7;
+    padding: 40px 20px;        /* space inside the block */
     display: flex;
     align-items: flex-start; /* Align image and text at the top */
-    gap: 20px; /* Space between image and text */
+    gap: 30px; /* Space between image and text */
     
-  }
+}
   
-  .header-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-
 
   /* Link styling as block buttons */
-  .left-sidebar a {
+.left-sidebar a {
     display: flex;                 /* Make links take full width */
     padding: 7px 15px;
     margin: 5px 0;
-    background-color: #48b772;;      /* Soft blue background */
+    background-color: #a7d2f7;
     color: #ffffff;                 /* Navy text */
     text-decoration: none;         /* Remove underline */
     border-radius: 100px;
     font-weight: bold;
     margin-left: 20px;   /* ⬅️ Pushes each link in from the left */
+    border: 3px solid black;
     transition: background-color 0.2s ease;
-  }
+}
   
-  .left-sidebar a:hover {
-    background-color: #96ffad;     /* Slightly darker on hover */
+.left-sidebar a:hover {
+    background-color: #6b9be3;     /* Slightly darker on hover */
     cursor: pointer;
-  }
-  
-
-
-
-
-
-  .centered-list {
-    list-style-type: disc;         /* Keep bullets */
-    list-style-position: inside;   /* Bring bullets inside text box */
-    text-align: center;            /* Center both text and bullets */
-    padding: 0;
-    margin: 0;
-  }
-  
-  .centered-list li {
-    text-align: center;
-  }
-
-  .centered-list-no-bullets{
-    text-align: center;            /* Center both text and bullets */
-    padding: 0;
-    margin: 0;
-  }
-  
-  .video-audio-section {
-    text-align: center; /* Centers inline and inline-block elements */
-    margin: 40px 0;      /* Optional spacing */
-  }
-  
-  .survey{
-    background-color: #ffffff;  /* light blue background */
-    color: #1a2b4c;             /* navy text */
+}
 
   
-  }
-  .header-content {
-    display: flex;           /* This is key: makes sidebar + text sit side by side */
-    align-items: flex-start; /* Align items at the top */
-    justify-content: space-between; /* Push left and right apart */
+.left-side{
+    display: flex;                 /* Make links take full width */
+    padding: 7px 15px;
+    margin: 5px 0;
+    margin-left: 20px;   /* ⬅️ Pushes each link in from the left */   
+}
 
-  }
 
 
-  .Attendance-List {
+.Attendance-List {
     display: flex;
     flex-direction: column;
     background-color: #a7d2f7;
     width: 200px;
-    padding: 15px;
+    height : 300px;
+    padding: 20px;
     border-radius: 6px;
+    margin: 10px;
+    box-sizing: border-box;
+    flex-shrink: 0; /* ✅ Prevent it from shrinking or growing */
+    overflow-y: auto; /* Optional: scroll if content overflows */
+    border: 3px solid black;
+}
+
+  
+
+.main-content {
+    flex: 1;
+    padding: 10px;
+    text-align:center;
+}
+
+.centered-list{
+
+        list-style: square;              /* or circle/square/none */
+        list-style-position: inside;   /* ✅ brings bullet into the content box */
+        text-align: center;            /* ✅ centers text and bullet together */
+        padding-left: 0;               /* Removes extra spacing on the left */
+        margin: 0 auto;
+}
+    
+      
+h2{
+font-size: 40px;
+}
+h3{
+    font-size: 30px;
+}
+h4{
+    font-size: 15px;
+}
+li{
+    font-size: 25px;
+}
+
+.layout-for-sections {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 20px;
   }
+  
+  .others-left-side {
+    flex: 1;
+  }
+  
+  .others-right-side {
+    flex: 1;
+    text-align: center;
+  }
+  

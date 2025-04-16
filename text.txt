@@ -1,0 +1,101 @@
+body {
+    background-color: #f0f5f8;
+    color: navy;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    background-color: #48b772;  /* light blue background */
+    padding: 40px 20px;        /* space inside the block */
+}
+
+.top-header {
+    display: flex;
+    align-items: flex-start; /* Align image and text at the top */
+    gap: 30px; /* Space between image and text */
+    
+  }
+  
+  .header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+
+  /* Link styling as block buttons */
+  .left-sidebar a {
+    display: flex;                 /* Make links take full width */
+    padding: 7px 15px;
+    margin: 5px 0;
+    background-color: #48b772;;      /* Soft blue background */
+    color: #ffffff;                 /* Navy text */
+    text-decoration: none;         /* Remove underline */
+    border-radius: 100px;
+    font-weight: bold;
+    margin-left: 20px;   /* ⬅️ Pushes each link in from the left */
+    transition: background-color 0.2s ease;
+  }
+  
+  .left-sidebar a:hover {
+    background-color: #96ffad;     /* Slightly darker on hover */
+    cursor: pointer;
+  }
+  
+
+  .Attendance-List {
+    display: flex;
+    flex-direction: column;
+    background-color: #a7d2f7;
+    width: 200px;
+    padding: 15px;
+    border-radius: 6px;
+  }
+
+
+
+  
+  .centered-list {
+    list-style-type: disc;         /* Keep bullets */
+    list-style-position: inside;   /* Bring bullets inside text box */
+    text-align: center;            /* Center both text and bullets */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .centered-list li {
+    text-align: center;
+  }
+
+  .centered-list-no-bullets{
+    text-align: center;            /* Center both text and bullets */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .video-audio-section {
+    text-align: center; /* Centers inline and inline-block elements */
+    margin: 40px 0;      /* Optional spacing */
+  }
+  
+  .survey{
+    background-color: #ffffff;  /* light blue background */
+    color: #1a2b4c;             /* navy text */
+
+  
+  }
+  .header-content {
+    display: flex;           /* This is key: makes sidebar + text sit side by side */
+    align-items: flex-start; /* Align items at the top */
+    justify-content: space-between; /* Push left and right apart */
+
+  }
+
+  
+  .main-header-text {
+    flex: 1; /* take up remaining space between sidebars */
+    text-align: center;
+    padding: 10px;
+  }
