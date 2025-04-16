@@ -14,6 +14,9 @@
           color: rgb(255, 255, 255);
           font-weight: bold;
       }
+
+
+
     </style>
 
   </head>
@@ -23,21 +26,21 @@
   <body>
 
     <header class="top-header">
-        <img src="9_of_spades_jpg.png" alt="Team Logo" width="150">
+        <img  class="logo" src="9_of_spades_jpg.png" alt="Team Logo" width="150">
               <h1>
                 <span class="highlight" style="font-size: 40px;"><i>CSE110 Group Meeting Notes</i></span>
               </h1>
-              <h4 style="color: black;" style="display: block;">
+              <h4 style="color: color-mix(in srgb, red 80%, blue 20%);" style="display: block;">
                 <strong>Warning:</strong> Top secret meeting notes, do<em> NOT</em> share!
               </h4>
-              <h4 class="highlight">Meeting Type: Check-Ins</h4>
-              <h4 class="highlight">Date: April 22, 2025</h4>
+              <h4 class="highlight" style = "color: color(srgb 0 0 1 / 0.5);">Meeting Type: Check-Ins</h4>
+              <h4 class="highlight" style = "color: color(srgb 0 0 1 / 0.5);">Date: April 22, 2025</h4>
     </header>
 
     <section class="layout"> 
-        <nav class="left-sidebar">
-          <a href="index.html">Home</a>
-          <a href="part2.txt">Part2</a>
+        <nav class="left-sidebar" >
+          <a href="index.html" class="position-sticky">Home</a>
+          <a href="part2.txt" class="position-static" > Part2</a>
           <a href="favicon.ico">Favicon</a>
           <a href="https://github.com/cse110-sp25-group09/cse110-sp25-group09" style="display: block; text-align: center;">
             Team Github Repo</a>
@@ -61,23 +64,28 @@
             
               <h3>2. Define Our Team Identity & Brand (10–15 min)</h3>
               <ul class ="centered-list">
-                <li>Come up with a team name, logo, and theme</li>
+                <li>Brainstorm ideas for a team name, logo, and theme</li>
               </ul>
           
             
               <h3>3. Build Our Team Webpage (15–20 min)</h3>
-              <ul class = "centered-list"> 
-                <li>Decide on layout, colors, and what content to feature (team photo, bios, contact info)</li>
-                <li>Assign tasks for designing and coding the page</li>
+              <ul class = "grid-container"> 
+                <li class="box">Decide on layout, colors, and what content to feature (team photo, bios, contact info)</li>
+                <li class="box">Ideas on UX/UI Design</li>
+                <li class="box">Assign tasks for designing and coding the page</li>
               </ul>
               
                     
               <h3>4. Plan Our Team Introduction Video (10 min)</h3>
-              <ul class ="centered-list">
-                <li>Max length: 2.5 minutes (MP4 or QuickTime format)</li>
-                <li>Ideas: Introduce team members, showcase your team dynamic, share your team goals</li>
-                <li>Decide on video style (talking heads, animation, skit, etc.) and who will edit</li>
+              <ul class ="flex-container">
+                <li class="box"> Max length: 2.5 minutes (MP4 or QuickTime format)</li>
+                <li class="box"> Ideas: Introduce team members, showcase your team dynamic, share your team goals</li>
+                <li class="box"> Decide on video style (talking heads, animation, skit, etc.) and who will edit</li>
               </ul>
+
+
+
+
               <!-- Agenda element END-->
 
 
@@ -155,7 +163,7 @@
       <!-- Date input -->
         <label for="date">Date:</label>
         <input type="date" id="date" name="date"><br>
-
+          
       <!-- Radio input -->
         <p style="display: block; text-align: left;">Favorite team name:</p>
         <input type="radio" id="9_of_spades" name="team_name" value="9_of_spades">
@@ -213,6 +221,7 @@
       <span><a href="https://www.freecodecamp.org/news/html-basics-for-beginners">HTML Basics</a></span>
       <span><a href="https://html.spec.whatwg.org/multipage/">HTML Specs</a></span>
       <span><a href="https://www.w3schools.com">W3 Schools</a></span>
+
     </footer>
 
   </body>
