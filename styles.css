@@ -19,8 +19,6 @@ body {
     
 }
   
-
-  /* Link styling as block buttons */
 .left-sidebar a {
     display: flex;                 /* Make links take full width */
     padding: 7px 15px;
@@ -39,15 +37,7 @@ body {
     background-color: #6b9be3;     /* Slightly darker on hover */
     cursor: pointer;
 }
-
   
-.left-side{
-    display: flex;                 /* Make links take full width */
-    padding: 7px 15px;
-    margin: 5px 0;
-    margin-left: 20px;   /* ⬅️ Pushes each link in from the left */   
-}
-
 
 
 .Attendance-List {
