@@ -21,76 +21,82 @@
 
 
   <body>
-    <header>
-     <h1> <span class = "highlight" style = "font-size: 20px;">CSE110 Group Meeting Notes</span></h1>
-     
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="part2.txt">Part2</a></li>
-           <li><a href="favicon.ico">Favicon</a></li>
-          </ul>
+    <header class="hero">
+      <div class="header-content">
+        <nav class="left-sidebar">
+          <img src="9_of_spades_jpg.png" alt="Team Logo" width="200" style="display: block; text-align: center;">
+          <a href="index.html">Home</a>
+          <a href="part2.txt">Part2</a>
+          <a href="favicon.ico">Favicon</a>
         </nav>
-      <p><strong>Warning:</strong> Top secret meeting notes, do<em> NOT</em> share!</p>
-      </header>
-
-    <main>
-      <section>
-     <!-- Tittle,Meeting type, Date element-->
-        <h2><i>CSE110</i></h2>
-        <h4>Meeting Type: Check-Ins</h4>
-        <h4>Date: April 12, 2025</h4>
-      </section>
-      <hr>
-      <!-- Main Meeting Notes-->
 
 
-    <section>
-     <!-- Attendee List element-->
-      <div class="Attendance-List">
-        <h3> Attendance List: </h3>
-        <ul>
-            <li>Vincent</li>
-            <li>Tri</li>
-            <li>Travis</li>
-            <li>Ahmed</li>
-            <li>Rosario</li>
-            <li>Trisha</li>
-            <li>Partham</li>
-            <li>Brendon</li>
-            <li></li>
-            <li></li>
-            <li></li>
-         </ul>
+        <div class="main-header-text">
+          <h1>
+            <span class="highlight" style="font-size: 40px;">CSE110 Group Meeting Notes</span>
+          </h1>
+          <span style="display: block; text-align: center;">
+            <strong>Warning:</strong> Top secret meeting notes, do<em> NOT</em> share!
+          </span>
+              <!-- Tittle,Meeting type, Date element-->
+              <h4>Meeting Type: Check-Ins</h4>
+              <h4>Date: April 22, 2025</h4>
+        </div>
+             <!-- Attendee List element-->
+        <div class="Attendance-List">
+          <h3> Attendance List: </h3>
+          <ul class="centered-list">
+              <li>Vincent</li>
+              <li>Tri</li>
+              <li>Travis</li>
+              <li>Ahmed</li>
+              <li>Rosario</li>
+              <li>Trisha</li>
+              <li>Partham</li>
+              <li>Brendon</li>
+              <li></li>
+              <li></li>
+              <li></li>
+          </ul>
+        </div>
+
       </div>
-    <hr>
+
+
+      </header>
+    <main>
+
+      <!-- Main Meeting Notes-->
+      <hr>
+    <section>
 
     <!-- Agenda element-->
     <h2> Agenda </h2>
        <h3>1. Team Bonding Activity (15–20 min)</h3>
-        <ul>
+        <ul class = "centered-list-no-bullets">
           <li>Focus on getting to know each other’s strengths and work styles</li>
         </ul>
         <details>
-          <summary>Choose a <i>fun</i> group activity!</summary>
+          <summary class = "centered-list-no-bullets">Choose a <i>fun</i> group activity!</summary>
           <p>Scribbio.io, Leetcode, Quizbreaker, Among Us <br> Ping Pong, Codenames, Hide & Seek</p>
         </details>
      
        <h3>2. Define Our Team Identity & Brand (10–15 min)</h3>
-        <ul>
+        <ul class ="centered-list-no-bullets">
          <li>Come up with a team name, logo, and theme</li>
         </ul>
-        <img src="9_of_spades_jpg.png" alt="Team Logo" width="200">
+    
      
        <h3>3. Build Our Team Webpage (15–20 min)</h3>
-        <ul>
+        <ul class = "centered-list-no-bullets"> 
          <li>Decide on layout, colors, and what content to feature (team photo, bios, contact info)</li>
          <li>Assign tasks for designing and coding the page</li>
         </ul>
-        <a href="https://github.com/cse110-sp25-group09/cse110-sp25-group09">Team Github Repo</a>
-     
+        <a href="https://github.com/cse110-sp25-group09/cse110-sp25-group09" style="display: block; text-align: center;">
+          Team Github Repo</a>
+             
        <h3>4. Plan Our Team Introduction Video (10 min)</h3>
-        <ul>
+       <ul class ="centered-list-no-bullets">
          <li>Max length: 2.5 minutes (MP4 or QuickTime format)</li>
          <li>Ideas: Introduce team members, showcase your team dynamic, share your team goals</li>
          <li>Decide on video style (talking heads, animation, skit, etc.) and who will edit</li>
@@ -99,7 +105,7 @@
         <hr>
         <!--things that were unfinished business from last meeting-->
         <h2> Others: </h2>
-        <ol>
+        <ol class ="centered-list-no-bullets"></ul>
             <li>Things that were <b>unfinished</b> business from last meeting... </li>
             <li>Things that are <b>new</b> business that need to be talked about... </li>
             <li>Any <b>miscellaneous</b> comments / questions / concerns that anyone would like to bring up... </li>
@@ -108,17 +114,18 @@
         <hr>
 
         <!--Video-->
-        <h2>Video </h2>
-          <video width="500" height="300" controls>
-            <source src="video_file.mp4" type="video/mp4">
-          </video>
-
+        <div class="video-audio-section">
+          <h2>Video </h2>
+            <video width="500" height="300" controls >
+              <source src="video_file.mp4" type="video/mp4">
+            </video>
         <!--Audio-->
           <h2>Audio </h2>
           <audio controls>
             <source src="video_file.mp4" type="audio/mp4">
           </audio>
-          
+        </div>
+
         </section>
     </main>
 
@@ -126,22 +133,23 @@
      
     <!--Forms-->
       
-      <section>
-        <h3>Survey: Name, Date & Comments</h3>
+      <section class = "survey">
         <form action="/submit" method="post">
     <!-- Grouping with Fieldset -->
         <fieldset>
+        <h3 style="display: block; text-align: left;"></h3>Survey: Name, Date & Comments</h3>
+        <br>
     
       <!-- Text input -->
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name"><br><br>
+        <input type="text" id="name" name="name"><br>
 
       <!-- Date input -->
         <label for="date">Date:</label>
-        <input type="date" id="date" name="date"><br><br>
+        <input type="date" id="date" name="date"><br>
 
       <!-- Radio input -->
-        <p>Favorite team name:</p>
+        <p style="display: block; text-align: left;">Favorite team name:</p>
         <input type="radio" id="9_of_spades" name="team_name" value="9_of_spades">
         <label for="9_of_spades">9 of Spades</label>
         
@@ -149,11 +157,11 @@
         <label for="niners">Niners</label>
         
         <input type="radio" id="cloud_9" name="team_name" value="cloud_9">
-        <label for="cloud_9">Cloud 9</label> <br><br>
+        <label for="cloud_9">Cloud 9</label> <br>
        
 
       <!-- Checkbox input -->
-      <p>Favorite Programming Language(s):</p>
+      <p style="display: block; text-align: left;">Favorite Programming Language(s):</p>
       <input type="checkbox" id="python" name="programming_languages" value="python">
       <label for="python">Python</label>
 
@@ -161,12 +169,12 @@
       <label for="c++">C++</label>
 
       <input type="checkbox" id="java" name="programming_languages" value="java">
-      <label for="java">Java</label><br><br>
+      <label for="java">Java</label><br>
 
 
       <!-- textarea -->
       <label for="comment">Comments & Concerns:</label><br>
-      <textarea id="comment" name="comment" rows="5" cols="40"></textarea><br><br>
+      <textarea id="comment" name="comment" rows="5" cols="40"></textarea><br>
 
       <!-- datalist , option -->
       <label for="activity">Favorite Group Activity:</label>
