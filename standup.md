@@ -21,7 +21,7 @@ Daily or Weekly Check-in Meeting..
 +
 
 ---
-## Progress
+## Progress Checker
 
 
 |  Team Member | Previous goals met last time we met |  New goals for today and onward |  Blockers |
