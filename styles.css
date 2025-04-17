@@ -19,6 +19,7 @@ body {
 
 /*Class Selector*/
 .layout {
+    flex: 1;
     display: flex; /*Ability to line up layout into columns*/
     margin: auto; /* Adds space outside the element*/
     
