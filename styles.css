@@ -234,3 +234,21 @@ button.combine_two_sectors{
       transform: scale(1.5);  /* slight press-in effect */
     }
   }
+
+
+  /* 📱 Media query for screens 600px and smaller */
+@media (max-width: 600px) {
+    .layout {
+      flex-direction: column; /* Stack sidebar and main content */
+    }
+  
+    .left-sidebar {
+      display: none; /* Hide sidebar on small screens */
+    }
+  
+    .main-content {
+      font-size: 14px;
+      padding: 20px;
+    }
+  }
+  
