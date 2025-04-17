@@ -15,7 +15,11 @@
           font-weight: bold;
       }
 
-
+      /*Universal Selector*/
+      * {
+        outline: none;
+        line-height: 1.25;
+        }
 
     </style>
   </head>
@@ -24,9 +28,11 @@
 
   <body>
     <header class="top-header">
-        <img  class="logo" src="9_of_spades_jpg.png" alt="Team Logo" width="150">
+        <div>
+          <img  class="logo" src="9_of_spades_jpg.png" alt="Team Logo" width="150">
+        </div>
               <h1>
-                <span class="highlight" style="font-size: 40px;"><i>CSE110 Group Meeting Notes</i></span>
+                <span id="main-title"><i>CSE110 Group Meeting Notes</i></span>
               </h1>
               <h4 style="color: color-mix(in srgb, rgb(246, 7, 7) 80%, rgb(255, 255, 255) 20%); display: block;">
                 <strong>Warning:</strong> Top secret meeting notes, do<em> NOT</em> share!
@@ -55,15 +61,24 @@
               <ul class = "centered-list">
                 <li>Focus on getting to know each other’s strengths and work styles</li>
               </ul>
-              <details style = "font-size: 20px;">
-                <summary class = "centered-list">Choose a <i>fun</i> group activity!</summary>
-                <p>Scribbio.io, Leetcode, Quizbreaker, Among Us <br> Ping Pong, Codenames, Hide & Seek</p>
-              </details>
+                <div>
+                  <details style = "font-size: 20px;">
+                    <summary class = "centered-list">Choose a <i>fun</i> group activity!</summary>
+                    <p>Scribbio.io, Leetcode, Quizbreaker, Among Us <br> Ping Pong, Codenames, Hide & Seek</p>
+                  </details>
+                </div>
             
               <h3>2. Define Our Team Identity & Brand (10–15 min)</h3>
               <ul class ="centered-list">
                 <li>Brainstorm ideas for a team name, logo, and theme</li>
+                  <li>Niners</li>
+                  <li> Cloud 9
+                    <ul>
+                      <li>Sub-Examples</li>
+                    </ul>
+                  </li>
               </ul>
+              
           
             
               <h3>3. Build Our Team Webpage (15–20 min)</h3>
@@ -144,19 +159,19 @@
 
 
 
-     
+      <hr><hr>
     <!--Forms-->
       
       <section class = "survey">
         <form action="/submit" method="post">
     <!-- Grouping with Fieldset -->
         <fieldset>
-        <h3 style="display: block; text-align: left;"></h3>Survey: Name, Date & Comments</h3>
-        <br>
-    
+        <h3 style="color:black; display: block; text-align: left;">Survey: Name, Date & Comments</h3>
+
       <!-- Text input -->
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name"><br>
+      <label for="name">Name:</label>
+      <input type="text" placeholder="name"><br>
+        
 
       <!-- Date input -->
         <label for="date">Date:</label>
@@ -208,7 +223,7 @@
       </select><br><br>
 
     <!-- button -->
-    <button>Submit!</button>
+    <button class="combine_two_sectors">Submit!</button>
       </fieldset>
      </form>
     </section>

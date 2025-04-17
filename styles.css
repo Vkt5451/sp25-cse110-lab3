@@ -1,56 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-:root {--main-color: hsl(210, 40%, 96%);}
+
+/*
+Use 3 unique relative units total: em, rem, %
+Use 3 unique absolute units total: px,in,cm
+Position used: Sticky, Static
+*/
+
+:root {--main-color: hsl(210, 40%, 96%);} /*Main background color is light-ish blue-ish gray*/
 
 body {
-    background-color: var(--main-color, #ef877b); 
-    color: hsla(240, 83%, 47%, 0.7);
-    color: rgba(0, 0, 255, 0.5);
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    
-    
+    background-color: var(--main-color, #ef877b); /*CSS fallback if main color does not work */
+    color: hsla(357, 83%, 47%, 0.7); /*NOT WORKING */
+    color: rgba(0, 0, 255, 0.5); /*NOT WORKING */
+    margin: 0; /* Adds space outside the element*/
+
 }
 
+/*Class Selector*/
 .layout {
-    display: flex;
-    margin: auto;
-}
-
-.main-content {
-    flex: 1;
-    padding: 10px;
-    text-align:center;
+    display: flex; /*Ability to line up layout into columns*/
+    margin: auto; /* Adds space outside the element*/
+    
 }
 
 .top-header {
-    background-color: #a7d2f7;
-    padding-top: 10px; 
-    padding-bottom: 20px;
-    display: flex;
+    background-color: #a7d2f7; /* Background color is lightblue-ish */
+    padding-top: 10px;  /* space within the header is spaced 10px  */
+    padding-bottom: 20px;/* space within the header is spaced 20px  */
+    display: flex;/*Ability to line up layout into columns*/
     align-items: flex-start; /* Align image and text at the top */
     gap: 30px; /* Space between image and text */
-    
+    font-family: 'Roboto', sans-serif; /*   */
     
 }
-
-
-
+.main-content {
+    flex: 1;/* Split evenly, no arguments*/
+    padding: 10px; /*Adds space/gap between elements */
+    text-align:center;/* Aligns text to the center */
+}
 
 .left-sidebar a {
     display: flex;                 /* Make links take full width */
-    padding: 7px 15px;
-    margin: 5px 0;
-    background-color: #a7d2f7;
-    color: #ffffff;                 /* Navy text */
+    padding: 7px 15px; /*Space between elements*/
+    margin: 5px 0; /* Adds space outside the element*/
+    background-color: #a7d2f7; /* Background color is lightblue-ish */
+    color: #FFFFFF;                 /* white text */
     text-decoration: none;         /* Remove underline */
-    border-radius: 100px;
-    border-style:outset;
-    font-weight: bold;
+    border-radius: 100px; /*    gives borders rounded corners  */
+    border-style:outset;    /*value gives your element a 3D "pushed-out" effect,*/
+    font-weight: bold;      /*Makes text bold */
     margin-left: 20px;   /* ⬅️ Pushes each link in from the left */
-    border: 3px solid black;
-    transition: background-color 0.2s ease;
+    border: 3px solid black; /*Border color is black */
+    transition: background-color 0.2s ease; /*Visually changes the background color*/
     width: 50%;
     height: 5%;
 }
@@ -59,129 +61,175 @@ body {
     background-color: #6b9be3;     /* Slightly darker on hover */
     border-style: dashed dotted solid double; /* Top: dashed, Right: dotted, Bottom: solid, Left: double */
     border-width: 2px; /* 2px border on all sides */
-    cursor: pointer;
+    cursor: pointer; /* changes the mouse cursor to a hand icon */
 }
   
-
-
 .Attendance-List {
-    display: flex;
-    flex-direction: column;
-    background-color: #a7d2f7;
+    background-color: #a7d2f7; /* Background color is lightblue-ish */
 
-    max-width: 12.5pc; /* Never gets wider than 500px */
+    max-width: 12.5pc; /* Never gets wider than 12.5pc */
+    max-height: 4.325in; /*Height never exceeds 4.325in*/
 
-    max-height: 4.325in;
-
-    padding: 20px;
-    margin: 10px;
+    padding: 20px; /* space within  is spaced 20px  */
+    margin: 10px; /* Adds space outside the element*/
     
     flex-shrink: 0; /* ✅ Prevent it from shrinking or growing */
     overflow-y: auto; /* Optional: scroll if content overflows */
 
-    border-radius: 6px;
-    border-style: solid;
-    border-color: black;
-    box-sizing: border-box;
+    border-radius: 30px;/*    gives borders rounded corners  */
+    border-style: solid; /* border style is solid*/
+    border-color: black; /* border color is black*/
+    box-sizing: border-box; /*changes how the total width and height of an element is calculated.*/
 }
 
+.Attendance-List:hover{
+    background-color: #6b9be3; /* Background color is lightblue-ish */
+}
   
-
 
 .centered-list{
 
-        list-style: square;              /* or circle/square/none */
-        list-style-position: inside;   /* ✅ brings bullet into the content box */
-        text-align: center;            /* ✅ centers text and bullet together */
+        list-style: square;             /* or circle/square/none */
+        list-style-position: inside;   /* brings bullet into the content box */
+        text-align: center;            /* centers text and bullet together */
         padding-left: 0;               /* Removes extra spacing on the left */
-        margin: 0 auto;
+        margin: auto;                   /*push the element to the center.*/
 }
      
 .layout-for-sections {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
-    margin-top: 20px;
+    display: flex;  /*Ability to line up layout into columns*/
+    justify-content: space-between; /*control the alignment of flex items along main axis*/
+    align-items: flex-start; /*control the alignment of items along the cross axis*/
+    gap: 40px; /*Space between items is 40px*/
+    margin-top: 20px; /*creates a space of 20 pixels between the element and the one above it*/
 }
 
 .others-left-side {
-flex: 1;
-display: block;
-background-color: #a7d2f7;
-padding: 10px;
-margin: 10px 0;
+    flex: 1; /* Split evenly, no arguments*/
+    background-color: #a7d2f7; /* Background color is lightblue-ish */
+    padding: 10px; /*applies 10 pixels of padding on all four sides of the element*/
+    margin: 10px 0; /*for the top and bottom margins.*/
 }
 
 .others-right-side {
-flex: 1;
-text-align: center;
-display: inline-block;
-background-color: #a7d2f7;
-padding: 10px;
-margin: 5px;
+    flex: 1; /* Split evenly, no arguments*/
+    text-align: center; /*Aligns text to the center */
+    display: inline-block;
+    background-color: #a7d2f7; /* Background color is lightblue-ish */
+    padding: 10px; /*applies 10 pixels of padding on all four sides of the element*/
+    margin: 5px;  /*for the all sides margins.*/
+}
+
+  
+/* allow the elements to lay themselves out automatically */
+.flex-container{
+    display: flex;                    /* Enables flexbox */
+    justify-content: space-between;  /* Distributes space between items */
+    align-items: center;             /* Aligns items vertically */
+    gap: 20px;                      /*gap between items*/
+    list-style: none; /* remove bullet points */
+}
+
+/* instantiate a grid for the layouts */
+.grid-container{
+    display: grid;      /* Enables grid */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /*define the number of columns and their behavior in a grid layout.*/
+    gap: 20px; /*gap between items*/
+    padding: 0; /*no padding*/
+    list-style: none; /* remove bullet points */
+}
+
+.box{
+    font-size: 20px;
+    flex: 1; /* Split evenly, no arguments*/
+    background-color: #a7d2f7;  /* Background color is lightblue-ish */
+    text-align: center; /*centers text*/
+    font-weight: bold;
+}
+
+   
+.position-sticky {
+    position: sticky; /*"stick" to a position as you scroll, but only within its containing element*/
+    top: 0;  /* Sticks to the top of the viewport when scrolling */
 }
 
 
+.position-static{
+    position: static; /*element is not positioned in any special way */
+    margin: auto;
+    border:  black;
 
+}
+
+
+/*ID Selector */
+#main-title {
+    font-size: 2.5rem;
+    color: navy;
+}
+
+/*Attribute Selector*/
+input[placeholder] {
+border: 1px solid black;
+}
+
+/*Pseudo-class Selector*/
+h1:hover{
+    background-color: #6b9be3;
+}
+
+/*Element Selector */
 h2{
-font-size: 2.5rem;}
+    font-size: 2.5rem;}
 h3{
     font-size: 1.875em;}
 h4{
     font-size: 15px;}
 li{
 font-size: 25px;}
-    
 
 
+/*Selector List*/
+p,label, span{
+    color:black;
+}
+
+ /*  New Selectors  Adopted in December 2023!, :has() */
+div:has(img) {
+    border: 5px solid black;
+}
+
+/*Descendant Combinator (element element)*/
+div p{
+    color:rgb(203, 58, 169);
+}
+/*  Child Combinator    */
+ul > li{
+    font-weight:bold;
+}
+/* General Sibling Combinator  */
+h3~ul{
+    color: hsla(240, 83%, 47%, 0.7);
+}
+
+/*  Adjacent Sibling Combinator    */
+input + label{
+    color: rgb(39, 32, 227);
+
+}
+/*  Combining Two Selectors    */
+button.combine_two_sectors{
+    background-color: rgb(117, 149, 245);
+    color: white;
+}
+
+/*Nested Selector*/
 .logo {
-    transition: 0.3s ease;
+    transition: 0.3s ease; /* Transition takes 0.3 seconds */
     cursor: pointer; /* makes it feel clickable */
-  }
   
-  
-  /* When clicked (active) */
-  .logo:active {
-    filter: brightness(0.30); /* slightly darker */
-    transform: scale(1.5);  /* slight press-in effect */
+    &:active {
+      filter: brightness(0.3); /* slightly darker */
+      transform: scale(1.5);  /* slight press-in effect */
+    }
   }
-  
-
-  .flex-container{
-    display: flex;                    /* Enables flexbox */
-    justify-content: space-between;  /* Distributes space between items */
-    align-items: center;             /* Aligns items vertically */
-    gap: 20px;
-    list-style: none; /* remove bullet points */
-  }
-  
-  .grid-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 0;
-    list-style: none; /* remove bullet points */
-  }
-
-  .box{
-    font-size: 20px;
-    flex: 1;
-    background-color: #a7d2f7;
-    text-align: center;
-    font-weight: bold;
-  }
-
-      /* Fixed */
-.position-sticky {
-    position: sticky;
-    top: 0;  /* Sticks to the top of the viewport when scrolling */
-}
-
-
-.position-static{
-    position: static;
-    margin: auto;
-    border:  black;
-
-}
