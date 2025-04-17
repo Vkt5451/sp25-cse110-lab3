@@ -84,6 +84,7 @@ body {
 }
 
 .Attendance-List:hover{
+    background-color: pink; /* fallback */
     background-color: color-mix(in srgb, red 50%, white);
 }
   
