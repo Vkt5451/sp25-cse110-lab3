@@ -84,7 +84,7 @@ body {
 }
 
 .Attendance-List:hover{
-    background-color: #6b9be3; /* Background color is lightblue-ish */
+    background-color: color-mix(in srgb, red 50%, white);
 }
   
 
